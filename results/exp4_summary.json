@@ -1,0 +1,31 @@
+{
+  "note": "Using synthetic data; real analysis requires ESc1 intraday data from commercial provider.",
+  "T_train": 2000,
+  "T_eval": 3617,
+  "score": "squared_error",
+  "decompositions": {
+    "HAR": {
+      "S": 0.323234,
+      "S_C": 0.31684,
+      "S_R": 0.68036,
+      "MCB": 0.006394,
+      "DSC": 0.36352,
+      "UNC": 0.68036
+    },
+    "GARCH": {
+      "S": 0.25264,
+      "S_C": 0.243311,
+      "S_R": 0.68036,
+      "MCB": 0.009329,
+      "DSC": 0.437049,
+      "UNC": 0.68036
+    }
+  },
+  "pairwise": {
+    "HAR_vs_GARCH": {
+      "p_mcb": 0.456567,
+      "p_dsc": 5e-06,
+      "p_dm": 5e-06
+    }
+  }
+}

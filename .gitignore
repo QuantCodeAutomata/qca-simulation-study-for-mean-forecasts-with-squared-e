@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data (raw market data should NOT be committed)
+data/raw/
+data/*.csv
+data/*.parquet
+data/*.pkl
+!data/README.md
+
+# Results — commit RESULTS.md, figures, and summary CSVs; exclude raw run logs
+results/run_log.txt
+results/*.pkl
+
+# Logs
+*.log
+mlflow/
+
+# OS
+.DS_Store
+Thumbs.db
